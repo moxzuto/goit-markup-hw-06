@@ -77,15 +77,45 @@
     <!-- Уникальный контент этой страницы -->
     <main>
       <!-- бекдроп -->
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop" data-modal>
         <div class="modal">
           <button class="backdrop-button" data-modal-close>
             <svg class="svg-backdrop-button">
-              <use
-                href="./images/symbol-defs.svg#icon-backdrop-close"
-              ></use>
+              <use href="./images/symbol-defs.svg#icon-backdrop-close"></use>
             </svg>
           </button>
+
+          <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <form class="form-elements-backdrop">
+            <ul class="form-list list">
+              <li class="form-list-link">
+                <label for="user-nickname" class="modal-label">Ім'я</label>
+                <input type="text" name="user-nickname" id="user-nickname" class="modal-input" />
+              </li>
+
+              <li class="form-list-link">
+                <label for="user-tel" class="modal-label">Телефон</label>
+                <input type="tel" name="user-tel" id="user-tel" class="modal-input" />
+              </li>
+
+              <li class="form-list-link">
+                <label for="user-mail" class="modal-label">Пошта</label>
+                <input type="email" name="user-mail" id="user-mail"  class="modal-input"/>
+              </li>
+
+              <li class="form-list-link">
+                <label for="user-text" class="modal-label">Коментар</label>
+                <textarea class="modal-textarea" name="user-text" id="user-text" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+              </li>
+
+              <li class="checkbox-list-policy">
+                <input type="checkbox" name="policy" id="policy" value="Погоджуюся з розсилкою та приймаю Умови договору">
+                <label for="policy" name="policy" class="checkbox-label">Погоджуюся з розсилкою та приймаю <span class="policy-span">Умови договору</span></label>
+              </li>
+              
+              <button type="submit" class="button-form"> <strong class="button-form-text">Відправити</strong></button>
+            </ul>
+          </form>
         </div>
       </div>
       <section class="hero overlay-hero">
@@ -172,21 +202,27 @@
                   width="370"
                 />
               </li>
-                <p class="team-images-description images-description-text">Десктопні додатки</p>
+              <p class="team-images-description images-description-text">
+                Десктопні додатки
+              </p>
             </div>
 
             <div class="image-wrapper">
               <li class="team-images-link">
                 <img src="./images/tel.jpg" alt="телефон" width="370" />
               </li>
-                <p class="team-images-description images-description-text">Мобільні додатки</p>
+              <p class="team-images-description images-description-text">
+                Мобільні додатки
+              </p>
             </div>
 
             <div class="image-wrapper">
               <li class="team-images-link">
                 <img src="./images/kub.png" alt="дизайн куба" width="370" />
               </li>
-                <p class="team-images-description images-description-text">Дизайнерські рішення</p>
+              <p class="team-images-description images-description-text">
+                Дизайнерські рішення
+              </p>
             </div>
           </ul>
         </div>
