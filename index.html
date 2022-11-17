@@ -77,7 +77,7 @@
     <!-- Уникальный контент этой страницы -->
     <main>
       <!-- бекдроп -->
-      <div class="backdrop" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="backdrop-button" data-modal-close>
             <svg class="svg-backdrop-button">
@@ -90,30 +90,62 @@
             <ul class="form-list list">
               <li class="form-list-link">
                 <label for="user-nickname" class="modal-label">Ім'я</label>
-                <input type="text" name="user-nickname" id="user-nickname" class="modal-input" />
+                <input
+                  type="text"
+                  name="user-nickname"
+                  id="user-nickname"
+                  class="modal-input"
+                />
               </li>
 
               <li class="form-list-link">
                 <label for="user-tel" class="modal-label">Телефон</label>
-                <input type="tel" name="user-tel" id="user-tel" class="modal-input" />
+                <input
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                  class="modal-input"
+                />
               </li>
 
               <li class="form-list-link">
                 <label for="user-mail" class="modal-label">Пошта</label>
-                <input type="email" name="user-mail" id="user-mail"  class="modal-input"/>
+                <input
+                  type="email"
+                  name="user-mail"
+                  id="user-mail"
+                  class="modal-input"
+                />
               </li>
 
               <li class="form-list-link">
                 <label for="user-text" class="modal-label">Коментар</label>
-                <textarea class="modal-textarea" name="user-text" id="user-text" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                <textarea
+                  class="modal-textarea"
+                  name="user-text"
+                  id="user-text"
+                  cols="30"
+                  rows="10"
+                  placeholder="Введіть текст"
+                ></textarea>
               </li>
 
               <li class="checkbox-list-policy">
-                <input type="checkbox" name="policy" id="policy" value="Погоджуюся з розсилкою та приймаю Умови договору">
-                <label for="policy" name="policy" class="checkbox-label">Погоджуюся з розсилкою та приймаю <span class="policy-span">Умови договору</span></label>
+                <input
+                  type="checkbox"
+                  name="policy"
+                  id="policy"
+                  value="Погоджуюся з розсилкою та приймаю Умови договору"
+                />
+                <label for="policy" name="policy" class="checkbox-label"
+                  >Погоджуюся з розсилкою та приймаю
+                  <span class="policy-span">Умови договору</span></label
+                >
               </li>
-              
-              <button type="submit" class="button-form"> <strong class="button-form-text">Відправити</strong></button>
+
+              <button type="submit" class="button-form">
+                <strong class="button-form-text">Відправити</strong>
+              </button>
             </ul>
           </form>
         </div>
@@ -483,6 +515,28 @@
               ><svg class="social-icon">
                 <use href="./images/icons.svg#icon-linkedin"></use></svg
             ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="form-elements-footer">
+        <strong class="form-text-footer">Підпишіться на розсилку</strong>
+        <ul class="link list">
+          <li class="form-footer-list">
+            <form>
+              <input
+                placeholder="E-mail"
+                type="email"
+                name="user-mail-spam"
+                id="user-mail-spam"
+                class="footer-input"
+              />
+            
+            <button type="submit" class="button-footer-form"><span class="button-footer-text">Підписатися</span>
+              <svg class="telegram-footer-icon">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+            </form>
           </li>
         </ul>
       </div>
