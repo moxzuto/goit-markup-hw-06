@@ -257,11 +257,36 @@ h3 {
 }
 
 .checkbox-list-policy {
-  margin-left: 28px;
   margin-top: 10px;
 
   display: flex;
   align-items: center;
+}
+
+.policy-checkbox {
+  appearance: none;
+}
+
+.checkbox-label {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--main-color);
+  border-radius: 2px;
+  
+  margin-right: 7px;
+}
+
+.policy-checkbox:checked + .checkbox-label {
+  background-color: var(--accent-color);
+  background-image: url('../images/icon-check.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: padding-box;
+  border-color: transparent;
+
+  background-position: center;
 }
 
 .modal-label {
@@ -833,6 +858,7 @@ h3 {
   position: absolute;
   margin-left: 468px;
   display: block;
+  margin-top: 10px;
 }
 
 .form-text-footer {
