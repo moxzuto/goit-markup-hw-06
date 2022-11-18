@@ -90,31 +90,47 @@
             <ul class="form-list list">
               <li class="form-list-link">
                 <label for="user-nickname" class="modal-label">Ім'я</label>
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-person-modal"></use>
+                </svg>
                 <input
                   type="text"
                   name="user-nickname"
                   id="user-nickname"
                   class="modal-input"
+                  autocomplete="off"
+                  required
                 />
+                
+                
               </li>
 
               <li class="form-list-link">
                 <label for="user-tel" class="modal-label">Телефон</label>
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-phone-modal"></use>
+                </svg>
                 <input
                   type="tel"
                   name="user-tel"
                   id="user-tel"
                   class="modal-input"
+                  autocomplete="off"
+                  required
                 />
               </li>
 
               <li class="form-list-link">
                 <label for="user-mail" class="modal-label">Пошта</label>
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-email-modal"></use>
+                </svg>
                 <input
                   type="email"
                   name="user-mail"
                   id="user-mail"
                   class="modal-input"
+                  autocomplete="off"
                 />
               </li>
 
@@ -136,6 +152,7 @@
                   name="policy"
                   id="policy"
                   value="Погоджуюся з розсилкою та приймаю Умови договору"
+                  required
                 />
                 <label for="policy" name="policy" class="checkbox-label"
                   >Погоджуюся з розсилкою та приймаю
@@ -529,6 +546,7 @@
                 name="user-mail-spam"
                 id="user-mail-spam"
                 class="footer-input"
+                required
               />
             
             <button type="submit" class="button-footer-form"><span class="button-footer-text">Підписатися</span>
