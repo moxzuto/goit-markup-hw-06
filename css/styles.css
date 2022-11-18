@@ -278,14 +278,13 @@ h3 {
   margin-right: 7px;
 }
 
-.policy-checkbox:checked + .checkbox-label {
+.policy-checkbox:checked + .checkbox-label  {
   background-color: var(--accent-color);
   background-image: url('../images/icon-check.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-origin: padding-box;
   border-color: transparent;
-
   background-position: center;
 }
 
@@ -728,6 +727,19 @@ h3 {
 
 /*Footer*/
 
+.container-footer {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+
 .footer {
   background: #2f303a;
   padding-top: 60px;
@@ -769,8 +781,7 @@ h3 {
 }
 
 .footer-contacts-link:not(:last-child) {
-  margin-top: 10px;
-  margin-bottom: 10px;
+
 }
 
 .footer-map:hover {
@@ -786,16 +797,11 @@ h3 {
 }
 
 .footer-address {
-  margin-left: 215px;
   margin-right: 0px;
 }
 
 /* социа футера */
 .social-footer {
-  margin-top: 10px;
-  margin-right: 878px;
-  margin-bottom: 100px;
-  margin-left: 70px;
   justify-content: center;
 }
 
@@ -855,8 +861,7 @@ h3 {
 /* footer form element */
 
 .form-elements-footer {
-  position: absolute;
-  margin-left: 468px;
+  position: relative;
   display: block;
   margin-top: 10px;
 }
@@ -888,11 +893,19 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
   padding-left: 16px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-input::placeholder {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  border: 1px solid #2196f3;
 }
 
 .button-footer-form {
