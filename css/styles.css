@@ -191,13 +191,13 @@ h3 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--background-color);
 
-  margin-left: 490px;
   margin-right: 8px;
   margin-top: 8px;
   cursor: pointer;
 
-  justify-content: center;
-  align-items: center;
+  left: 93%;
+  right: -0%;
+
 }
 
 .svg-backdrop-button {
@@ -233,9 +233,9 @@ h3 {
 
   color: var(--main-color);
 
-  margin-top: 40px;
-  padding-left: 56px;
-  padding-right: 40px;
+
+  top: 5%;
+  left: 10%;
 }
 
 .form-list {
