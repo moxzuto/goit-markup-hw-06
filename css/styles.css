@@ -275,7 +275,6 @@ h3 {
   border: 2px solid var(--main-color);
   border-radius: 2px;
   margin-right: 7px;
-
 }
 
 .policy-checkbox:checked + .checkbox-label {
@@ -358,10 +357,12 @@ h3 {
 .policy-span {
   text-decoration-line: underline;
   color: #2196f3;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
   letter-spacing: 0.03em;
-  
-  margin-left: 5px;
+  padding-left: 6px;
 }
 
 .label-policy-checkbox {
@@ -374,6 +375,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .button-form-text {
